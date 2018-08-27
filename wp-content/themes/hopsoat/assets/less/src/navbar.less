@@ -369,7 +369,7 @@
     }
     .active > a,
     .open > a{
-      color: @navbar-default-link-hover-color;
+      // color: @navbar-default-link-hover-color;
       background-color: @navbar-default-link-hover-bg;
     }
     > .current-menu-ancestor > a,
@@ -557,6 +557,7 @@
   font-style: @navbar-font-style;
   font-weight: @navbar-font-weight; 
   font-family: @navbar-font-family;
+  text-align: left;
   //@media (min-width: @nav-float-breakpoint) {
    // float: none;
   //}
@@ -1491,4 +1492,12 @@
 
 .offcanvas-widget {
     margin-top: 3rem;
+}
+
+.header-type-classic .primary-nav li.mm_catpro {
+	background: #2e2e2e;
+	width: 240px;
+	a{
+		display: block;
+	}
 }

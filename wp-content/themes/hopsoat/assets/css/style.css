@@ -3123,7 +3123,6 @@ input[type="button"].btn-block {
 }
 .navbar-default .navbar-nav .active > a,
 .navbar-default .navbar-nav .open > a {
-  color: #111111;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .current-menu-ancestor > a,
@@ -3276,6 +3275,7 @@ input[type="button"].btn-block {
   font-style: normal;
   font-weight: 400;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
+  text-align: left;
 }
 .primary-nav .navicon {
   margin-right: 0.57142857rem;
@@ -4238,6 +4238,13 @@ body.admin-bar .offcanvas-wrap {
 }
 .offcanvas-widget {
   margin-top: 3rem;
+}
+.header-type-classic .primary-nav li.mm_catpro {
+  background: #2e2e2e;
+  width: 240px;
+}
+.header-type-classic .primary-nav li.mm_catpro a {
+  display: block;
 }
 /*--------------------------------------------------------------
 11.0 - Breadcrumbs
@@ -6934,7 +6941,7 @@ a[data-toggle="tooltip"]:hover {
   font-family: FontAwesome;
   width: 5em;
   height: 3.5em;
-  background: #111111;
+  background: #ed1f24;
   line-height: 3.5em;
   text-align: center;
   color: #ffffff;
