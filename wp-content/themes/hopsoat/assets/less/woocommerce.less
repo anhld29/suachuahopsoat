@@ -5432,8 +5432,8 @@ li.unveil-image {
 		position: relative;
 		&:before{
 			content:"";
-			border-top:1px solid @brand-primary;
-			border-bottom:1px solid @brand-primary;
+			border-top:1px solid @body-bg;
+			border-bottom:1px solid @body-bg;
 		    content: "";
 		    position: absolute;
 		    top: 1em;
@@ -5447,8 +5447,8 @@ li.unveil-image {
 		    transform: scale(0, 1);
 		}
 		&:after{
-			border-right:1px solid @brand-primary;
-			border-left:1px solid @brand-primary;
+			border-right:1px solid @body-bg;
+			border-left:1px solid @body-bg;
 		    content: "";
 		    position: absolute;
 		    top: 1em;
@@ -5473,7 +5473,34 @@ li.unveil-image {
 		}	
 	}
 }
-
+.st_product_sale{
+	margin-bottom:1.5em;
+	span{
+		padding-bottom: .3em;
+		position: relative;
+		display: inline-block;
+		&:before{
+			content:"";
+			width: 100%;
+			height: 2px;
+			background: #ed1f24;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+		&:after{
+			width: 10px;
+			height: 10px;
+			background: #ed1f24;
+			position: absolute;
+			left: 50%;
+			bottom: -4px;
+			content: "";
+			margin-left: -5px;
+			transform: rotate(45deg)
+		}
+	}
+}
 .tparrows{
 	.border-radius(50%);
 	&:hover{

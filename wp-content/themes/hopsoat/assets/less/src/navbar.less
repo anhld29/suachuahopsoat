@@ -752,7 +752,7 @@
       position: relative;
       @media (min-width: @nav-float-breakpoint) {
         .header-type-classic &{
-          padding: 0 15px;
+          padding: 0 25px;
           line-height: @navbar-height;
           text-transform: uppercase;
         }
@@ -1497,7 +1497,26 @@
 .header-type-classic .primary-nav li.mm_catpro {
 	background: #2e2e2e;
 	width: 240px;
-	a{
+	a.sf-with-ul.dropdown-hover{
 		display: block;
+		&:before{
+			content: "\61";
+		    font-family: 'ElegantIcons';
+		    speak: none;
+		    font-weight: normal;
+		    font-variant: normal;
+		    font-style: normal;
+		    text-transform: none;
+		    display: inline-block;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+			position: absolute;
+			right: .3em;
+			top: 50%;
+			transform:translate(0,-50%);
+			font-size: 180%;
+		}
+
 	}
 }
