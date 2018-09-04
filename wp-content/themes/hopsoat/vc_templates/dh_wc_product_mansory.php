@@ -193,17 +193,17 @@ if(is_array($category_arr) && count($category_arr) > 0):
 										<figcaption>
 											<div class="shop-loop-product-info">
 												<?php if(dh_get_theme_option('woo-grid-product-style') !='style-3') : ?>
-													<div class="info-rating">
-														<?php woocommerce_template_loop_rating(); ?>
-													</div>
-													<div class="info-meta clearfix">
-														<?php woocommerce_template_loop_rating(); ?>
-														<?php if(class_exists('DH_Woocommerce')):?>
+													<!-- <div class="info-rating">
+														<?php //woocommerce_template_loop_rating(); ?>
+													</div> -->
+													<!-- <div class="info-meta clearfix">
+														<?php //woocommerce_template_loop_rating(); ?>
+														<?php //if(//class_exists('DH_Woocommerce')):?>
 															<div class="loop-add-to-wishlist">
-																<?php DH_Woocommerce::instance()->template_loop_wishlist()?>
+																<?php //DH_Woocommerce::instance()->template_loop_wishlist()?>
 															</div>
-														<?php endif;?>
-													</div>
+														<?php //endif;?>
+													</div> -->
 												<?php endif; ?>
 												<div class="info-content-wrap">
 													<?php if(dh_get_theme_option('woo-grid-product-style') !='style-3') : ?>
@@ -218,11 +218,11 @@ if(is_array($category_arr) && count($category_arr) > 0):
 															<div class="info-price">
 																<?php woocommerce_template_loop_price(); ?>
 															</div>
-															<?php if(class_exists('DH_Woocommerce')):?>
+															<!-- <?php //if(class_exists('DH_Woocommerce')):?>
 																<div class="loop-add-to-wishlist">
-																	<?php DH_Woocommerce::instance()->template_loop_wishlist()?>
+																	<?php //DH_Woocommerce::instance()->template_loop_wishlist()?>
 																</div>
-															<?php endif;?>
+															<?php //endif;?> -->
 														</div>
 													<?php endif;?>
 													
@@ -247,11 +247,11 @@ if(is_array($category_arr) && count($category_arr) > 0):
 															if(class_exists('DH_Woocommerce'))
 															DH_Woocommerce::instance()->template_loop_quickview();
 														?>
-														<?php if(class_exists('DH_Woocommerce')):?>
+														<!-- <?php //if(class_exists('DH_Woocommerce')):?>
 															<div class="loop-add-to-wishlist">
-																<?php DH_Woocommerce::instance()->template_loop_wishlist()?>
+																<?php //DH_Woocommerce::instance()->template_loop_wishlist()?>
 															</div>
-														<?php endif;?>
+														<?php //endif;?> -->
 													</div>
 												</div>
 											</div>

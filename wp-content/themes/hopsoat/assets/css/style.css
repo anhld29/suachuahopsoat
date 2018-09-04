@@ -3129,7 +3129,6 @@ input[type="button"].btn-block {
 .navbar-default .navbar-nav > .current-menu-parent > a,
 .navbar-default .navbar-nav > .current-menu-ancestor > a:hover,
 .navbar-default .navbar-nav > .current-menu-parent > a:hover {
-  color: #111111;
   background-color: transparent;
 }
 .navbar-default .navbar-collapse {
@@ -4239,14 +4238,17 @@ body.admin-bar .offcanvas-wrap {
 .offcanvas-widget {
   margin-top: 3rem;
 }
-.header-type-classic .primary-nav li.mm_catpro {
+.header-type-classic .primary-nav li.mm_catpro,
+li.mm_catpro {
   background: #2e2e2e;
   width: 240px;
 }
-.header-type-classic .primary-nav li.mm_catpro a.sf-with-ul.dropdown-hover {
+.header-type-classic .primary-nav li.mm_catpro a.sf-with-ul.dropdown-hover,
+li.mm_catpro a.sf-with-ul.dropdown-hover {
   display: block;
 }
-.header-type-classic .primary-nav li.mm_catpro a.sf-with-ul.dropdown-hover:before {
+.header-type-classic .primary-nav li.mm_catpro a.sf-with-ul.dropdown-hover:before,
+li.mm_catpro a.sf-with-ul.dropdown-hover:before {
   content: "\61";
   font-family: 'ElegantIcons';
   speak: none;
